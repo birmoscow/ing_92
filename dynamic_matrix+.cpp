@@ -44,3 +44,30 @@ int main() {
   matr = deleteMatrix(matr, row, col);
   cout << matr;
 }
+
+
+/*
+
+
+//Освобождение памяти, используя адресную арифметику
+void deleteMatrix(int ***matrix, int row, int col) {
+  for(int i = 0; i < row; i++) {
+    delete[] (*matrix)[i];
+  }
+  delete[] *matrix;
+  *matrix = NULL;
+}
+
+
+int main() {
+  int row, col;
+  cin >> row >> col;
+  int **matr = createMatrix(row, col);
+  
+  print(matr, row, col);
+
+  deleteMatrix(&matr, row, col);
+  cout << matr;
+}
+
+*/
