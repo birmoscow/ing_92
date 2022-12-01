@@ -33,6 +33,7 @@ int ** deleteMatrix(int **matrix, int row, int col) {
   return NULL;
 }
 
+
 int main() {
   int row, col;
   cin >> row >> col;
