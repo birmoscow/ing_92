@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 int main() {
   int a, b;
   char sym;
@@ -10,22 +11,20 @@ int main() {
   if (sym == '+') {
     cout << "Ответ: " << a+b;
   }
- else if (sym == '-') {
+  else if (sym == '-') {
    cout << "Ответ: " << a-b;
- }
+  }
   else if (sym == '*') {
     cout << "Ответ: " << a*b;
   }
   else if (sym == '/'){
-    if (b == 0){
+    if (b == 0) {
       cout << "Неправильный ввод данных";
-      } else
-    cout<< "Ответ: "  << a/b;
+    } else cout << "Ответ: " << a/b;
   }
   else if (sym == '%' ){
-    if (b == 0){
+    if (b == 0) {
       cout << "Неправильный ввод данных";
-      } else
-    cout << "Ответ: "  << a%b;
-    }
+    } else cout << "Ответ: " << a%b;
   }
+}
